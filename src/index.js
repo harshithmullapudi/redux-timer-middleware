@@ -54,7 +54,7 @@ export default function timerMiddleware({dispatch}) {
                                 payload: actionPayload
                             });
                             // dispatch end action
-                            dispatch({type: `${actionName}_END`});
+                            dispatch({type: `${actionName}_END`, payload: actionPayload});
                         } else {
                             dispatch({
                                 type: actionName,
